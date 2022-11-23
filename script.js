@@ -8,7 +8,7 @@ fetch(api())
   .then((data) => {
     console.log(data);
     document.getElementById("ville").innerHTML = data.city.name;
-    document.getElementById("meteo").innerHTML = JSON.stringify(data.forecast.tmax) + "°C";
+    document.getElementById("meteo").innerHTML = JSON.stringify(data.forecast[0].temp2m) + "°C";
   })
   .catch((error) => alert("Erreur : " + error));
 
