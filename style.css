@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(sky.jpeg);
     height: 100 vh;
@@ -16,4 +17,25 @@ body {
     background-position: top center;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
+}
+
+#meteo {
+    color: orangered;
+    padding-left: 15%;
+    padding-top: 15%;
+    font-size: 200px;
+}
+
+#ville {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heure {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 1.5%;
+    padding-top: 3%;
 }

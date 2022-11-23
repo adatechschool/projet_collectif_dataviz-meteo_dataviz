@@ -4,12 +4,11 @@ fetch(api())
       throw Error(response.statusText);
     }
     return response.json();
-  })
+  }) 
   .then((data) => {
     console.log(data);
-    document.getElementById("ville").innerHTML = "Ville : " + data.city.name;
-    document.getElementById("meteo-max").innerHTML =
-      "Température : " + JSON.stringify(data.forecast.tmax) + "°C";
+    document.getElementById("ville").innerHTML = data.city.name;
+    document.getElementById("meteo").innerHTML = JSON.stringify(data.forecast.tmax) + "°C";
   })
   .catch((error) => alert("Erreur : " + error));
 
