@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url("/police/CenturyGothic.ttf") format("truetype")
+}
+
 #meteo-min, #meteo-max {
     font-size: large;
     color: blueviolet;
@@ -20,10 +25,11 @@ body {
 }
 
 #meteo {
-    color: orangered;
+    color: black;
     padding-left: 15%;
     padding-top: 15%;
     font-size: 200px;
+    font-family: 'CenturyGothic';
 }
 
 #ville {
@@ -39,3 +45,4 @@ body {
     padding-right: 1.5%;
     padding-top: 3%;
 }
+
