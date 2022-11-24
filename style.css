@@ -1,6 +1,10 @@
 @font-face {
-	font-family: 'CenturyGothic';
-	src: url("/police/CenturyGothic.ttf") format("truetype")
+	font-family: 'Poppins';
+	src: url("/police/Poppins-Thin.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Fredoka One';
+    src: url("/police/FredokaOne-Regular.ttf") format("truetype");
 }
 
 #meteo-min, #meteo-max {
@@ -29,13 +33,16 @@ body {
     padding-left: 15%;
     padding-top: 15%;
     font-size: 200px;
-    font-family: 'CenturyGothic';
 }
 
 #ville {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: grey;
+    padding: 5%;
+    font-family: 'Fredoka One';
+    color: white;
 }
 
 #heure {
@@ -44,5 +51,14 @@ body {
     align-items: flex-end;
     padding-right: 1.5%;
     padding-top: 3%;
+    font-size: 40px;
 }
 
+#container-ville {
+    padding-right: 47%;
+    padding-left: 47%;
+}
+
+#meteo, #heure {
+    font-family: 'Poppins';
+}

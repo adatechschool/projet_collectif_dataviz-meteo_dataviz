@@ -7,8 +7,8 @@ fetch(api())
   }) 
   .then((data) => {
     console.log(data);
-    document.getElementById("ville").innerHTML = data.city.name;
-    document.getElementById("meteo").innerHTML = JSON.stringify(data.forecast[0].temp2m) + "°C";
+    document.getElementById("ville").innerHTML = data.city.name.toUpperCase();
+    document.getElementById("meteo").innerHTML = JSON.stringify(data.forecast[0].temp2m) + "°";
   })
   .catch((error) => alert("Erreur : " + error));
 
@@ -20,7 +20,6 @@ function runClock() {
 
   timeValue += (minutes < 10 ? ":0" : ":") + minutes;
   document.getElementById("heure").innerHTML = timeValue;
-  console.log(timeValue);
 }
 runClock();
 setInterval(runClock, 1000);
