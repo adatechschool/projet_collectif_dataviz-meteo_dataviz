@@ -8,13 +8,15 @@
         <title>Document</title>
     </head>
     <body>
-        <p id="heure"></p>
         <div id="container-ville">
-            <p id="ville"></p>
-            <img src="./images/fleche.jpg" class="bouton" id="g" style="width: 24px;">
-            <img src="./images/fleche.jpg" class="bouton" style="width: 24px;">        
+            <img src="./images/fleche.jpg" onclick="changeSlide(-1)" class="bouton" id="g" style="padding: 14px; width: 10px;">
+            <img src="./images/fleche.jpg" onclick="changeSlide(1)" class="bouton" id="d" style="padding: 14px; width: 10px;">        
         </div>
-        <h1 id="meteo"></h1>
+
+        <div class="meteoHeure">
+            <h1 id="meteo"></h1>
+            <p id="heure"></p>
+        </div>
     
         <script src="configuration.js"></script>
         <script src="script.js"></script>

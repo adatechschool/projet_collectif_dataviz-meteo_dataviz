@@ -9,7 +9,6 @@
 
 body {
     background-image: url(./images/sky.jpeg);
-    height: 100 vh;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: top center;
@@ -17,49 +16,44 @@ body {
     background-size: cover;
 }
 
-#meteo {
-    color: black;
-    padding-left: 15%;
-    top: 7;
-    font-size: 200px;
-}
-
 #ville {
     display: flex;
     justify-content: center;
     align-items: center;
     background: grey;
-    padding: 5%;
     font-family: 'Fredoka One';
     color: white;
+    padding: 0.4%;
 }
 
 #heure {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 1.5%;
-    padding-top: 3%;
-    font-size: 40px;
+    align-items: center;
+    font-size: 100px;
+    padding-right: 2%;
+}
+
+#meteo {
+    padding-left: 5%;
+    font-size: 200px;
+}
+
+.meteoHeure {
+    display: flex;
+    color:wheat;
+    padding-top: 22%;
+    font-family: 'Poppins';
+    justify-content: space-between;
 }
 
 #container-ville {
-    padding-right: 47%;
-    padding-left: 47%;
-}
-
-#meteo, #heure {
-    font-family: 'Poppins';
-}
-
-.bouton {
-    padding-left: 21%;
+    display: flex;
 }
 
 .bouton:hover {
    opacity: 0.5;
 }
 
-#g{
+#g {
     transform: rotate(-180deg);
 }
