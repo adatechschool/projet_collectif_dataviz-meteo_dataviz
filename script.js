@@ -12,6 +12,26 @@ fetch(api())
   })
   .catch((error) => alert("Erreur : " + error));
 
+
+  let tabVille = [
+  {
+    ville: "Lyon",
+    code: "69123"
+  },
+  {
+    ville: "Strasbourg",
+    code: "67482"
+  },
+  {
+    ville: "Rouen",
+    code: "76540"
+  },
+  {
+    ville: "Marseille",
+    code: "13055"
+  }
+]
+
 function runClock() {
   var today = new Date();
   var hours = today.getHours();
@@ -23,3 +43,6 @@ function runClock() {
 }
 runClock();
 setInterval(runClock, 1000);
+
+
+

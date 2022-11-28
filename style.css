@@ -7,19 +7,8 @@
     src: url("/police/FredokaOne-Regular.ttf") format("truetype");
 }
 
-#meteo-min, #meteo-max {
-    font-size: large;
-    color: blueviolet;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-image: url(sky.jpeg);
+    background-image: url(./images/sky.jpeg);
     height: 100 vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -31,7 +20,7 @@ body {
 #meteo {
     color: black;
     padding-left: 15%;
-    padding-top: 15%;
+    top: 7;
     font-size: 200px;
 }
 
@@ -61,4 +50,16 @@ body {
 
 #meteo, #heure {
     font-family: 'Poppins';
+}
+
+.bouton {
+    padding-left: 21%;
+}
+
+.bouton:hover {
+   opacity: 0.5;
+}
+
+#g{
+    transform: rotate(-180deg);
 }
