@@ -41,6 +41,22 @@ let tabVille = [
   {
     ville: "BREST",
     code: "29019"
+  }, 
+  {
+    ville: "BIARRITZ",
+    code: "64122"
+  },
+  {
+    ville: "BORDEAUX",
+    code: "33063"
+  }, 
+  {
+    ville: "NICE",
+    code: "06088"
+  },
+  {
+    ville: "NANTES",
+    code: "44109"
   }
 ]
 
@@ -57,11 +73,13 @@ function runClock() {
 
 
 let index = 0;
-let container = document.getElementById("container-ville");
+let container = document.getElementById("container-ville") ;
+let img = document.getElementById("d");
+let imgP = document.getElementById("d").parentNode;
 let p = document.createElement("p");
 p.id = "ville";
 p.innerHTML = tabVille[index].ville;
-container.appendChild(p);
+imgP.insertBefore(p,img);
 
 fetchApi(tabVille[index].code);
 
@@ -77,11 +95,9 @@ function changeSlide(sens) {
 
   fetchApi(tabVille[index].code) 
   p.innerHTML = tabVille[index].ville;
-  container.appendChild(p)
+  container.appendChild(p);
+  imgP.insertBefore(p,img)
 }
 
 runClock();
 setInterval(runClock, 1000);
-
-
-

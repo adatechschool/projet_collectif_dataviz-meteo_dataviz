@@ -48,6 +48,7 @@ body {
 
 #container-ville {
     display: flex;
+    justify-content: flex-end;
 }
 
 .bouton:hover {
