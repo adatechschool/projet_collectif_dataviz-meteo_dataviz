@@ -32,7 +32,6 @@ function runClock() {
   document.getElementById("heure").innerHTML = timeValue;
 }
 
-
 function changeSlide(sens) {
   index = index + sens;
   if(index < 0) {
