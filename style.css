@@ -3,6 +3,9 @@
     color: blueviolet;
 } */
 
+body{
+    overflow: hidden;
+}
 
 * {
     margin: 0;
